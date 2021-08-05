@@ -48,8 +48,9 @@ function another(tar, nums) {
             j++;
         }
     }
+    winS;
     return winS === Number.POSITIVE_INFINITY ? 0 : winS;
 }
 
-console.log(minSub(11, [1, 2, 3, 4, 5, 6, 7,0, 8]))
-console.log(minSub(11, [1, 1, 1, 2,  5, 4,6,8]))
+console.log(minSub(11, [1, 1, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1,,9,2,3,4,5,6,11]))
+console.log(another(11, [1,4,9,2,11]))

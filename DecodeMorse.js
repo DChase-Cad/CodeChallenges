@@ -11,7 +11,15 @@ const decodeMorse = (morseCode) => {
     return morseCode.trim().split('  ').map(decodeWord).join(' ').toUpperCase();
 }
 
+const decode = (m)=>{
+    return m.trim().split('  ').map(w=>w.split(' ').map(l=>MORSE_CODE[l]).join('')).join(' ').toUpperCase();
+}
+
 
 
 
 console.log(decodeMorse('      ...---... -.-.--   - .... .   --.- ..- .. -.-. -.-   -... .-. --- .-- -.   ..-. --- -..-   .--- ..- -- .--. ...   --- ...- . .-.   - .... .   .-.. .- --.. -.--   -.. --- --. .-.-.-  '));
+console.log(decodeMorse('... --- ...'))
+
+console.log(decode('... --- ...'))
+console.log(decode('      ...---... -.-.--   - .... .   --.- ..- .. -.-. -.-   -... .-. --- .-- -.   ..-. --- -..-   .--- ..- -- .--. ...   --- ...- . .-.   - .... .   .-.. .- --.. -.--   -.. --- --. .-.-.-  '))
