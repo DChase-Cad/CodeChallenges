@@ -1,6 +1,4 @@
 {
-    "cSpell.ignoreWords": [
-        "helloworld",
-        "nums"
-    ]
+  "cSpell.ignoreWords": ["helloworld", "nums"],
+  "cSpell.words": ["codewars"]
 }
