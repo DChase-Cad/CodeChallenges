@@ -50,6 +50,6 @@ function foldArray(array, runs) {
     // else {
     //     return foldArray(ans, runs)//recursively call function while runs >0
     // }
-}
+
 
 console.log(foldArray([1, 2, 3, 4, 5], 1))
